@@ -1,0 +1,54 @@
+/* Font declarations for Nova.
+   Self-hosted Google Fonts: Plus Jakarta Sans + Public Sans. */
+
+/* Plus Jakarta Sans — headings */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Plus Jakarta Sans'), local('PlusJakartaSans'),
+       url('/fonts/plus-jakarta-sans-400.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Plus Jakarta Sans SemiBold'), local('PlusJakartaSans-SemiBold'),
+       url('/fonts/plus-jakarta-sans-600.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Plus Jakarta Sans Bold'), local('PlusJakartaSans-Bold'),
+       url('/fonts/plus-jakarta-sans-700.ttf') format('truetype');
+}
+
+/* Public Sans — body */
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Public Sans'), local('PublicSans'),
+       url('/fonts/public-sans-400.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Public Sans Medium'), local('PublicSans-Medium'),
+       url('/fonts/public-sans-500.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Public Sans Bold'), local('PublicSans-Bold'),
+       url('/fonts/public-sans-700.ttf') format('truetype');
+}
