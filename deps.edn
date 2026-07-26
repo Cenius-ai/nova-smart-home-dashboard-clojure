@@ -1,0 +1,9 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        ring/ring-core {:mvn/version "1.11.0"}
+        ring/ring-jetty-adapter {:mvn/version "1.11.0"}
+        metosin/reitit {:mvn/version "0.5.18"}
+        hiccup/hiccup {:mvn/version "1.0.5"}
+        cheshire/cheshire {:mvn/version "5.11.0"}}
+ :aliases {:run {:main-opts ["-m" "nova.core"]}
+           :seed {:main-opts ["-m" "nova.seed"]}}}
