@@ -1,6 +1,7 @@
 # Nova Smart Home Dashboard — production-ready Clojure monitoring dashboard starter
 
-**Nova Smart Home Dashboard** is a free, open-source monitoring dashboard built with Clojure. A home automation IoT dashboard built with Clojure (Ring/Reitit), featuring interactive history charts, multiple pages, seeded demo data, and a polished, responsive UI with light and dark themes. Run it locally, deploy it as a self-hosted monitoring dashboard, or [remix it on cenius.ai](https://cenius.ai/marketplace/p/nova-smart-home-dashboard?ref=gh&utm_campaign=nova-smart-home-dashboard-clojure) to make it your own — the whole application (code, design, seeded demo data) ships in this repository under the Apache-2.0 license.
+Need a self-hosted monitoring dashboard? **Nova Smart Home Dashboard** is the open-source answer: a Clojure project you can clone, run, and own. A home automation IoT dashboard built with Clojure (Ring/Reitit), featuring interactive history charts, multiple pages, seeded demo data, and a polished, responsive UI with light and dark themes. Every Nova Smart Home Dashboard line of code is here — no stripped demo, no paywalled features. Apache-2.0-licensed; [remix Nova Smart Home Dashboard on cenius.ai](https://cenius.ai/marketplace/p/nova-smart-home-dashboard?ref=gh&utm_campaign=nova-smart-home-dashboard-clojure) for a bespoke custom version.
+
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) ![Stack](https://img.shields.io/badge/Stack-Clojure-3b82f6) [![Built with cenius.ai](https://img.shields.io/badge/Built%20with-cenius.ai-8b5cf6)](https://cenius.ai)
 
@@ -36,6 +37,10 @@ _Local clone? See [Quick start](#quick-start) below. cenius.ai is the zero-setup
 ```
 
 See [`INSTALL.md`](INSTALL.md) for full setup and usage instructions.
+
+## Architecture
+
+No external services required: the entire monitoring dashboard runs from this Clojure repo (35 files). Top-level layout: `resources/`, `src/`. One command (`./install.sh`) covers dependency setup and demo-data seeding. Installation walkthrough: [`INSTALL.md`](INSTALL.md).
 
 ## Usage guide
 
@@ -87,31 +92,27 @@ All device data is seeded from `src/nova/seed.clj` when the server starts.
 
 _Full guide: [`USAGE.md`](USAGE.md)_
 
-## Architecture
-
-Clojure application, delivered as a complete, runnable project (35 files). Top-level layout: `resources/`, `src/`. `install.sh` provisions dependencies and seeds demo data, so the app boots with something to show. Setup details live in [`INSTALL.md`](INSTALL.md).
-
 ## FAQ
 
 ### What does it take to self-host Nova Smart Home Dashboard?
 
 Everything you need ships in this repo: clone it, run `./install.sh` to install dependencies and seed demo data, then follow [`INSTALL.md`](INSTALL.md) to start it. No external services required.
 
-### Can I change Nova Smart Home Dashboard without writing code?
+### Can I rebrand or white-label Nova Smart Home Dashboard?
 
-Open it on [cenius.ai](https://cenius.ai/marketplace/p/nova-smart-home-dashboard?ref=gh&utm_campaign=nova-smart-home-dashboard-clojure) and describe the changes you want in plain English — the platform modifies the app and gives you a new, downloadable build.
+Rebranding is straightforward under the MIT license — change what you want in the source. Or [open it on cenius.ai](https://cenius.ai/marketplace/p/nova-smart-home-dashboard?ref=gh&utm_campaign=nova-smart-home-dashboard-clojure): the platform handles the changes and grants full rebrand rights on the result.
 
 ### What powers Nova Smart Home Dashboard under the hood?
 
-The app is built with Clojure. What you see in this repo is the full production source, demo data included. Highlights include dashboard with device overview and summary.
+Nova Smart Home Dashboard runs on Clojure. This repo holds the full production source: you can inspect every part of it before deploying. Highlights include dashboard with device overview and summary.
+
+### Can non-developers customise Nova Smart Home Dashboard?
+
+[cenius.ai](https://cenius.ai/marketplace/p/nova-smart-home-dashboard?ref=gh&utm_campaign=nova-smart-home-dashboard-clojure) handles the implementation. Tell it what you want in everyday words, pick up the updated build. No coding needed.
 
 ### Is Nova Smart Home Dashboard free for commercial use?
 
 Yes. The code is Apache-2.0-licensed — use it, modify it, and ship it commercially. See [LICENSE](LICENSE).
-
-### Can I rebrand or white-label Nova Smart Home Dashboard?
-
-Yes. You can edit the source directly under the MIT license, or [remix it on cenius.ai](https://cenius.ai/marketplace/p/nova-smart-home-dashboard?ref=gh&utm_campaign=nova-smart-home-dashboard-clojure) — the platform route grants full rebrand and relicense rights over your derivative.
 
 ## License & rebranding
 
